@@ -1,0 +1,30 @@
+/*
+ * Megan McElenney
+ */
+package feettoinches022216;
+
+import javax.swing.JOptionPane;
+
+public class FeetToInches022216 
+{
+
+    public static void main(String[] args) 
+    {
+        String input;
+        int inchestostart;
+        int feet;
+        int inches;
+        
+        input = JOptionPane.showInputDialog("Pick distance in inches.");
+        inchestostart = Integer.parseInt (input);
+        
+        feet = inchestostart/12;
+        inches = inchestostart%12;
+        
+        JOptionPane.showMessageDialog(null, inchestostart + " inches is "
+                + "equivalent to " + feet + " feet " + inches + " inches.");
+        
+        
+    }
+    
+}
